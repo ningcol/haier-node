@@ -1,0 +1,36 @@
+
+<script type="text/javascript">
+RED.nodes.registerType('haier-configurator', {
+  category: 'config',
+  label () {
+    return this.name || '海尔默认配置'
+  },
+  defaults: {
+    name: {
+      value: ''
+    }
+  },
+  credentials: {
+    username: {type:"text",required:true},
+    password: {type: "password",required:true},
+  }
+})
+</script>
+  <script type="text/x-red" data-template-name="haier-configurator">
+    <div class="form-row">
+      <label for="node-config-input-name"><i class="icon-tag"></i>名称</label>
+      <input type="text" id="node-config-input-name" placeholder="海尔默认配置">
+    </div>
+    <div class="form-row">
+      <label for="node-config-input-username"><i></i>账户</label>
+      <input type="text" id="node-config-input-username" placeholder="海尔账号">
+    </div>
+    <div class="form-row">
+      <label for="node-config-input-password"><i></i>密码</label>
+      <input type="password" id="node-config-input-password" placeholder="海尔账号密码">
+    </div>
+  </script>
+  <script type="text/x-red" data-help-name="haier-configurator">
+    <p>海尔账户配置节点</p>
+    <p>下载海尔智家app，账户和密码就是海尔智家的账户密码</p>
+  </script>

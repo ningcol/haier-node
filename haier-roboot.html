@@ -1,0 +1,56 @@
+<script type="text/javascript">
+
+RED.nodes.registerType('haier-roboot', {
+  category: '海尔',
+  color: '#c07780',
+  paletteLabel: '海尔机器人',
+  label () {
+    return this.name || '海尔机器人'
+  },
+  defaults: {
+    haier: {
+      value: '',
+      type: 'haier-configurator'
+    },
+    name: {
+      value: ''
+    },
+    message: {
+      value: ''
+    }
+  },
+  inputs: 1,
+  outputs: 1,
+  icon: 'roboot.svg'
+})
+
+</script>
+
+    <script type="text/x-red" data-template-name="haier-roboot">
+          <div class="form-row">
+            <label for="node-input-haier"><i class="icon-tag"></i>配置</label>
+            <input type="text" id="node-input-haier">
+          </div>
+          <div class="form-row">
+            <label for="node-input-name"><i class="icon-tag"></i>名称</label>
+            <input type="text" id="node-input-name">
+          </div>
+          <div class="form-row">
+            <label for="node-input-message"><i class="icon-tag"></i>指令</label>
+            <input type="text" id="node-input-message" placeholder="ai 指令消息">
+          </div>
+    </script>
+    <script type="text/x-red" data-help-name="haier-roboot">
+      <h3>输入</h3>
+      <dl class="message-properties">
+          <dt>payload
+              <span class="property-type">string</span>
+          </dt>
+          <dd>控制指令</dd>
+          <dt>device
+            <span class="property-type">string</span>
+          </dt>
+      </dl>
+      <h3>输出</h3>
+      <p>结果</p>
+    </script>
