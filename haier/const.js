@@ -1,5 +1,5 @@
-const APP_VER = '7.1.4'
-const USER_AGENT = 'Uplus/7.1.4 (iPhone; iOS 13.4; Scale/2.00)'
+const APP_VER = '7.19.2'
+const USER_AGENT = 'Uplus/7.19.2 (iPhone; iOS 13.4; Scale/2.00)'
 const APP_KEY = '5dfca8714eb26e3a776e58a8273c8752'
 const APP_ID = 'MB-UZHSH-0001'
 const PHONE_TYPE = 'iPhone SE'
